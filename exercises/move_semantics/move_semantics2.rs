@@ -5,16 +5,15 @@
 // vec0 has length 3 content `[22, 44, 66]`
 // vec1 has length 4 content `[22, 44, 66, 88]`
 
-// I AM NOT DONE
 
 fn main() {
-    let vec0 = Vec::new();
+    let vec0 = vec![22,44,66];
 
     // Do not move the following line!
-    let mut vec1 = fill_vec(vec0);
+    let mut vec1 = fill_vec(vec0.clone());
 
     // Do not change the following line!
-    println!("{} has length {} content `{:?}`", "vec0", vec0.len(), vec0);
+    println!("{} has length {} content `{:?}`", "vec0", &vec0.len(), vec0);
 
     vec1.push(88);
 
